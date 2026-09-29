@@ -22,3 +22,10 @@ def unique_sorted(nums: list[float | int]) -> list[float | int]:
             break
     return unique_nums
 
+def flatten(mat: list[list | tuple]) -> list:
+    res_lst = []
+    for i in mat:
+        if type(i) != list and type(i) != tuple:
+            raise TypeError('строка не строка строк матрицы')
+        res_lst += i
+    return res_lst
