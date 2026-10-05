@@ -36,6 +36,11 @@ def flatten(mat: list[list | tuple]) -> list:
         res_lst += i
     return res_lst
 ```
+![Результат min_max](/images/lab02/01_1.png)
+
+![Результат unique_sorted](/images/lab02/01_2.png)
+
+![Результат flatten](/images/lab02/01_3.png)
 ## Задание №2
 0) Создадим отдельную функцию is_rectangle для проверки матриц на прямоугольность.
 1) Для транспонирования создаем новую матрицу, строки исходной матрицы становятся её столбцами.
@@ -74,6 +79,9 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
              sums[j] += mat[i][j]
     return sums
 ```
+![Результат transpose](/images/lab02/02_1.png)
+![Результат row_sums](/images/lab02/02_2.png)
+![Результат col_sums](/images/lab02/02_3.png)
 ## Задание №3
 Распаковываем кортеж в переменные fio, group, gpa, а затем преобразовываем каждую из них согласно заданию.
 ```python
@@ -92,5 +100,5 @@ def format_record(rec: tuple[str, str, float]) -> str:
     norm_gpa = f'{gpa:.2f}'
     return f'{norm_fio}, гр. {group}, GPA {norm_gpa}'
 ```
-
+![Вывод функции format_record](/images\lab02\03.png)
 
