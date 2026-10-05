@@ -100,5 +100,5 @@ def format_record(rec: tuple[str, str, float]) -> str:
     norm_gpa = f'{gpa:.2f}'
     return f'{norm_fio}, гр. {group}, GPA {norm_gpa}'
 ```
-![Вывод функции format_record](/images\lab02\03.png)
+![Вывод функции format_record](/images/lab02/03.png)
 
