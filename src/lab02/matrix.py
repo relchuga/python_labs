@@ -29,4 +29,4 @@ def col_sums(mat: list[list[float | int]]) -> list[float]:
         for j in range(len(mat[0])):
              sums[j] += mat[i][j]
     return sums
-print(col_sums([[0, 0], [0, 0]]))
+print(f'[[-1, 1], [10, -10]] -> {col_sums([[-1, 1], [10, -10]])}')

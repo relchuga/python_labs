@@ -29,3 +29,4 @@ def flatten(mat: list[list | tuple]) -> list:
             raise TypeError('строка не строка строк матрицы')
         res_lst += i
     return res_lst
+print(f'[[1, 2], (3, 4, 5)] -> {flatten([[1, 2], (3, 4, 5)])}')
