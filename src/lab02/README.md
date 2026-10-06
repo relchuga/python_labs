@@ -36,11 +36,11 @@ def flatten(mat: list[list | tuple]) -> list:
         res_lst += i
     return res_lst
 ```
-![Результат min_max](C:/Users/artem/Desktop/python_labs/images/lab02/01_1.png)
+![Результат min_max](images/lab02/01_1.png)
 
-![Результат unique_sorted](C:/Users/artem/Desktop/python_labs/images/lab02/01_2.png)
+![Результат unique_sorted](images/lab02/01_2.png)
 
-![Результат flatten](C:/Users/artem/Desktop/python_labs/images/lab02/01_3.png)
+![Результат flatten](images/lab02/01_3.png)
 ## Задание №2
 0) Создадим отдельную функцию is_rectangle для проверки матриц на прямоугольность.
 1) Для транспонирования создаем новую матрицу, строки исходной матрицы становятся её столбцами.
