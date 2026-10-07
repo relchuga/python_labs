@@ -42,7 +42,7 @@ def flatten(mat: list[list | tuple]) -> list:
     res_lst = []
     for i in mat:
         if type(i) != list and type(i) != tuple:
-            raise TypeError('строка не строка строк матрицы')
+            raise TypeError('Элементы матрицы только list и tuple')
         res_lst += i
     return res_lst
 ```
