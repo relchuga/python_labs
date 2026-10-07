@@ -1,4 +1,9 @@
 def min_max(nums: list[float | int]) -> tuple[float | int,float | int]:
+    if not isinstance(nums, list):
+        raise TypeError("На вход дается список")
+    for x in nums:
+        if not isinstance(x, (int,float)):
+            raise TypeError("Элементы списка должны быть int или float")
     if not nums:
         raise ValueError("Пустой список")
     max_nums = min_nums = nums[0]
