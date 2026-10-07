@@ -15,6 +15,11 @@ def min_max(nums: list[float | int]) -> tuple[float | int,float | int]:
     return min_nums, max_nums
 
 def unique_sorted(nums: list[float | int]) -> list[float | int]:
+    if not isinstance(nums, list):
+            raise TypeError("На вход дается список")
+    for x in nums:
+        if not isinstance(x, (int,float)):
+            raise TypeError("Элементы списка должны быть int или float")
     unique_nums = list(set(nums))
     len_list = len(unique_nums)
     for i in range(len_list-1):
