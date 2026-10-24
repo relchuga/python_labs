@@ -13,9 +13,9 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     if yo2e == True:
         text = text.replace("ё", "е")
         text = text.replace("Ё", "Е")
-    text = text.replace('\t', ' ')
-    text = text.replace('\r', ' ')
-    text = text.replace('\n', ' ')
+    text = text.replace('/t', ' ')
+    text = text.replace('/r', ' ')
+    text = text.replace('/n', ' ')
     text = text.strip()
     text = ' '.join(x for x in text.split())
     return text
@@ -27,7 +27,7 @@ def tokenize(text: str) -> list[str]:
         print("Введите строку")
     text = normalize(text)
     import re
-    tokens = re.findall(r"\w+(?:-\w+)*", text)
+    tokens = re.findall(r"/w+(?:-/w+)*", text)
     return tokens
 
 def count_freq(tokens: list[str]) -> dict[str, int]:
@@ -45,7 +45,7 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     sorted_items = sorted(freq.items(), key=lambda x: (-x[1],x[0]))
     return sorted_items[:n]
 ```
-![Скриншот тестов задания А](..\..\images\lab03\03_01.png)
+![Скриншот тестов задания А](../../images/lab03/03_01.png)
 ## Задание В
 Вводим данные с помощью stdin, импортируем функции из файла text.py, затем выводим статистику по тексту.
 ```python
@@ -74,4 +74,4 @@ print('Топ-5:')
 for word, frequency in tierlist:
     print(f'{word}: {frequency}')
 ```
-![Скриншот вывода кода задания В](..\..\images\lab03\03_02.png)
+![Скриншот вывода кода задания В](../../images/lab03/03_02.png)
