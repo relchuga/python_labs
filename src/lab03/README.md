@@ -45,7 +45,7 @@ def top_n(freq: dict[str, int], n: int = 5) -> list[tuple[str, int]]:
     sorted_items = sorted(freq.items(), key=lambda x: (-x[1],x[0]))
     return sorted_items[:n]
 ```
-![Скриншот тестов задания А](images/lab03/03_01.png)
+![Скриншот тестов задания А](../../images/lab03/03_01.png)
 ## Задание В
 Вводим данные с помощью stdin, импортируем функции из файла text.py, затем выводим статистику по тексту.
 ```python
