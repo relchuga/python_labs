@@ -10,6 +10,8 @@ def normalize(text: str, *, casefold: bool = True, yo2e: bool = True) -> str:
     text = text.strip()
     if casefold == True:
         text = text.casefold()
+    else:
+        text = text.lower()
     if yo2e == True:
         text = text.replace("ё", "е")
         text = text.replace("Ё", "Е")
