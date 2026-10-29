@@ -24,7 +24,7 @@ def write_csv(rows: Iterable[Sequence], path: str | Path,
 from collections import Counter
 
 def frequencies_from_text(text: str) -> dict[str, int]:
-    from lib.text import normalize, tokenize  # из ЛР3
+    from src.lib.text import normalize, tokenize  # из ЛР3
     tokens = tokenize(normalize(text))
     return Counter(tokens)  # dict-like
 
