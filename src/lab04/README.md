@@ -47,6 +47,7 @@ def sorted_word_counts(freq: dict[str, int]) -> list[tuple[str, int]]:
 ```Привет, мир! Привет!!!```
 
 Получаем report.csv:
+
 ![файл первого тест-кейса](../../images/lab04/test_a_report.png)
 
 Консоль:
