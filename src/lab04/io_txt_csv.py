@@ -21,6 +21,7 @@ def write_csv(rows: Iterable[Sequence], path: str | Path,
             w.writerow(header)
         for r in rows:
             w.writerow(r)
+
 from collections import Counter
 
 def frequencies_from_text(text: str) -> dict[str, int]:
