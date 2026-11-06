@@ -110,19 +110,25 @@ def csv_to_xlsx(csv_path: str, xlsx_path: str) -> None:
 ![Фото скрипта](../../images/lab05/script.png)
 
 ### json_to_csv() | people.json -> people.csv:
-## in:![](../../images/lab05/people_json.png)
-## out:![Фото 1 теста](../../images/lab05/test_1.png)
+## in:
+![](../../images/lab05/people_json.png)
+## out:
+![Фото 1 теста](../../images/lab05/test_1.png)
 
 
 
 ### csv_to_json() | cities.csv -> cities.json:
-## in: ![](../../images/lab05/cities_csv.png)
+## in: 
+![](../../images/lab05/cities_csv.png)
 
-## out: ![Фото 2 теста](../../images/lab05/test_2.png)
+## out: 
+![Фото 2 теста](../../images/lab05/test_2.png)
 
 ### csv_to_xlsx() | people.csv -> people.xlsx:
 
-## in: ![](../../images/lab05/people_csv.png)
-## out: ![Фото 3 теста](../../images/lab05/test_3.png)
+## in: 
+![](../../images/lab05/people_csv.png)
+## out: 
+![Фото 3 теста](../../images/lab05/test_3.png)
 
 Как видно из данных, функции корректны
