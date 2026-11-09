@@ -1,12 +1,14 @@
 from src.lib.text import *
-def text_stats(textos: str) -> str:
+def text_stats(textos: str, top: int = 5) -> None:
+    top = abs(top)
     tokens = tokenize(textos)
     total = len(tokens)
     freqs = count_freq(tokens)
     unique = len(freqs)
-    tierlist = top_n(freqs, 5)
-    print(f'Всего слов: {total}')
-    print(f'Уникальных слов: {unique}')
-    print('Топ-5:')
+    tierlist = top_n(freqs, top)
+    lines = [(f'Всего слов: {total}'),
+    (f'Уникальных слов: {unique}'),
+    (f'Топ-{top}:')]
     for word, frequency in tierlist:
-        print(f'{word}: {frequency}')
+        lines.append(f'{word}: {frequency}')
+    return '\n'.join(lines)

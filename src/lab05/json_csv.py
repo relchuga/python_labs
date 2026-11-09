@@ -10,9 +10,9 @@ def json_to_csv(json_path: str, csv_path: str) -> None:
     js_path = Path(json_path)
     c_path = Path(csv_path)
     if js_path.suffix != ".json":
-        raise ValueError("Некорректное расширение json-файла")
+        raise ValueError(f"Некорректное расширение json-файла или некорректный путь, указано {json_path}")
     if c_path.suffix != ".csv":
-        raise ValueError("Некорректное расширение csv-файла")
+        raise ValueError(f"Некорректное расширение csv-файла или некорректный путь, указано {csv_path}")
     try:
         with open(json_path, 'r', encoding='utf-8') as f:
             data = json.load(f)
